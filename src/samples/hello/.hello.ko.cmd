@@ -1,0 +1,1 @@
+cmd_/home/vivek/projects/LinuxFirewall/src/samples/hello/hello.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-2.6.32-39-generic/scripts/module-common.lds --build-id -o /home/vivek/projects/LinuxFirewall/src/samples/hello/hello.ko /home/vivek/projects/LinuxFirewall/src/samples/hello/hello.o /home/vivek/projects/LinuxFirewall/src/samples/hello/hello.mod.o
