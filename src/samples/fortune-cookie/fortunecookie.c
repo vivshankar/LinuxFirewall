@@ -65,6 +65,7 @@ int fortune_read(char* page, char **start, off_t off, int count, int *eof, void 
 {
   int len;
 
+  printk(KERN_INFO "fortune: In fortune_read");
   if (off > 0)
   {
     *eof = 1;
@@ -84,6 +85,7 @@ ssize_t fortune_write(struct file *filp, const char __user *buff, unsigned long 
 {
   int space_available = (MAX_COOKIE_LENGTH - cookie_index) + 1;
  
+  printk(KERN_INFO "fortune: In fortune_write");
   if (len > space_available)
   {
     printk(KERN_INFO "fortune: cookie pot is full!\n");
